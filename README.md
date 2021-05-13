@@ -1,2 +1,5 @@
 # Algorithm
-based on Python
+* based on Python
+
+
+>> Studying Algorithm _ JUNMAN_CHOI
