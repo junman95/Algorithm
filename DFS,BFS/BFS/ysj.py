@@ -1,5 +1,5 @@
 from collections import deque
-from itertools import permutations,combinations
+from itertools import permutations
 
 N = int(input())
 number_raw = list(map(int,input().split(' ')))
@@ -11,12 +11,10 @@ for i in range(4):
   for _ in range(operators[i]):
     operator_sets.append(i)
 def ysj() :
-  
-  
 
   answer_min = 0
   answer_max = 0 
-  for i in permutations(operator_sets,N-1):
+  for i in set(permutations(operator_sets,N-1)):
     count = 0
     temp = number_raw[0]
     for j in i:

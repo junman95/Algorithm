@@ -1,4 +1,4 @@
-
+#60058
 bracket = input()
 counter = 0
 def bracketFunc(bracket_str):
@@ -59,6 +59,7 @@ def isCorrect(u,v):
   elif stack == []:
     return True
 
+#No 4-4
 def setReverse(object):
   object_list = list(object[1:-1])
   object = ''

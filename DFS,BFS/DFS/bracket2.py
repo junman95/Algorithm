@@ -6,10 +6,12 @@ print(bracket_list)
 
 start_node = 0
 pairs = [[] for _ in range(2)]
+
+[[0],[1]]
 print(pairs)
 current_pos = 0
 
-
+#()))((()
 def brackets(bracket_list, current_node, pairs, current_pos):
     visited[current_node] = True
     print(current_node, " : ", bracket_list[current_node])
@@ -35,10 +37,7 @@ def solution():
         paired_bracket = brackets(bracket_list, start_node, pairs, current_pos)
         print(paired_bracket[0])
         for i in range(len(bracket_list)):
-            if bracket_list[i] == paired_bracket[0] or bracket_list[i]== paired_bracket[1]:
-                print("papa")
-
+            if paired_bracket != []:
                 bracket_list.pop(i)
-                print(bracket_list)
 
 solution()
