@@ -1,5 +1,5 @@
 # Algorithm
-* based on Python
+* Algorithm study for fun
 
 
 >> Studying Algorithm _ JUNMAN_CHOI
