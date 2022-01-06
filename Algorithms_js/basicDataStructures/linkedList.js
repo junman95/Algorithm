@@ -1,16 +1,38 @@
-function Node(val){
-  this.val = val;
-  this.next = null;
-}
+var LinkedList = (function() {
+  function LinkedList(){
+    this.length = 0;
+    this.head = null;
+  }
 
-let head = new Node(0);
-let node1 = new Node(1);
-let node2 = new Node(2);
+  function Node(data){
+    this.data = data;
+    this.next = null;
+  }
 
-head.next = node1;
-node1.next = node2;
-
-
-console.log(head.val)
-console.log(head.next.val)
-console.log(head.next.next.val)
+  LinkedList.prototype.add = (value)=>{
+    var node = new Node(value);
+    var current = this.head;
+    if(!current){
+      this.head = node;
+      this.length++;
+      return node;
+    }
+    else{
+      while(current.next){
+        current = current.next;
+      }
+      current.next = node;
+      this.length++;
+      return node;
+    }
+  }
+  LinkedList.prototype.search = (position)=>{
+    var current = this.head;
+    var count = 0;
+    while(current.next){
+      current = current.next;
+      count++;
+    } 
+    return current.data;
+  }
+})

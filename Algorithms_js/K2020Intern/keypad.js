@@ -71,7 +71,6 @@ function solution(numbers, hand) {
       }
     }
   }
-
   return answer.join('');//쉼표 제거 문자열 반환
 }
 
